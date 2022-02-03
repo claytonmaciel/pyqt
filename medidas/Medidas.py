@@ -1,0 +1,582 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Conversor(object):
+    def setupUi(self, Conversor):
+        Conversor.setObjectName("Conversor")
+        Conversor.resize(800, 600)
+        Conversor.setMinimumSize(QtCore.QSize(800, 600))
+        self.centralwidget = QtWidgets.QWidget(Conversor)
+        self.centralwidget.setMinimumSize(QtCore.QSize(800, 600))
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setSpacing(0)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.fundo = QtWidgets.QFrame(self.centralwidget)
+        self.fundo.setStyleSheet("background-color: rgb(45, 45, 45);")
+        self.fundo.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.fundo.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.fundo.setObjectName("fundo")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.fundo)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setSpacing(0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.barra_lateral = QtWidgets.QFrame(self.fundo)
+        self.barra_lateral.setMinimumSize(QtCore.QSize(80, 0))
+        self.barra_lateral.setMaximumSize(QtCore.QSize(80, 16777215))
+        self.barra_lateral.setStyleSheet("background-color: rgb(8, 241, 89);")
+        self.barra_lateral.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.barra_lateral.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.barra_lateral.setObjectName("barra_lateral")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.barra_lateral)
+        self.verticalLayout_3.setContentsMargins(0, 55, 0, 5)
+        self.verticalLayout_3.setSpacing(10)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.bt_comprimento = QtWidgets.QPushButton(self.barra_lateral)
+        self.bt_comprimento.setStyleSheet("background-color: rgb(166, 255, 169);\n"
+"")
+        self.bt_comprimento.setObjectName("bt_comprimento")
+        self.verticalLayout_3.addWidget(self.bt_comprimento)
+        self.bt_area = QtWidgets.QPushButton(self.barra_lateral)
+        self.bt_area.setStyleSheet("background-color: rgb(166, 255, 169);")
+        self.bt_area.setObjectName("bt_area")
+        self.verticalLayout_3.addWidget(self.bt_area)
+        self.bt_volume = QtWidgets.QPushButton(self.barra_lateral)
+        self.bt_volume.setStyleSheet("background-color: rgb(166, 255, 169);")
+        self.bt_volume.setObjectName("bt_volume")
+        self.verticalLayout_3.addWidget(self.bt_volume, 0, QtCore.Qt.AlignTop)
+        self.bt_sobre = QtWidgets.QPushButton(self.barra_lateral)
+        self.bt_sobre.setStyleSheet("background-color: rgb(166, 255, 169);")
+        self.bt_sobre.setObjectName("bt_sobre")
+        self.verticalLayout_3.addWidget(self.bt_sobre)
+        self.horizontalLayout.addWidget(self.barra_lateral)
+        self.stackedWidget = QtWidgets.QStackedWidget(self.fundo)
+        self.stackedWidget.setObjectName("stackedWidget")
+        self.pagina_comprimento = QtWidgets.QWidget()
+        self.pagina_comprimento.setObjectName("pagina_comprimento")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.pagina_comprimento)
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_2.setSpacing(0)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.barra_superior_comprimento = QtWidgets.QFrame(self.pagina_comprimento)
+        self.barra_superior_comprimento.setMinimumSize(QtCore.QSize(0, 50))
+        self.barra_superior_comprimento.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.barra_superior_comprimento.setStyleSheet("background-color: rgb(8, 241, 89);")
+        self.barra_superior_comprimento.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.barra_superior_comprimento.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.barra_superior_comprimento.setObjectName("barra_superior_comprimento")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.barra_superior_comprimento)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.label = QtWidgets.QLabel(self.barra_superior_comprimento)
+        self.label.setObjectName("label")
+        self.horizontalLayout_2.addWidget(self.label)
+        self.verticalLayout_2.addWidget(self.barra_superior_comprimento)
+        self.conteudo_comprimento = QtWidgets.QFrame(self.pagina_comprimento)
+        self.conteudo_comprimento.setMinimumSize(QtCore.QSize(650, 0))
+        self.conteudo_comprimento.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.conteudo_comprimento.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.conteudo_comprimento.setObjectName("conteudo_comprimento")
+        self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.conteudo_comprimento)
+        self.verticalLayout_6.setContentsMargins(0, 100, 0, 100)
+        self.verticalLayout_6.setSpacing(0)
+        self.verticalLayout_6.setObjectName("verticalLayout_6")
+        self.label_4 = QtWidgets.QLabel(self.conteudo_comprimento)
+        self.label_4.setMaximumSize(QtCore.QSize(16777215, 30))
+        self.label_4.setObjectName("label_4")
+        self.verticalLayout_6.addWidget(self.label_4)
+        self.comprimento_cima = QtWidgets.QFrame(self.conteudo_comprimento)
+        self.comprimento_cima.setMinimumSize(QtCore.QSize(300, 30))
+        self.comprimento_cima.setMaximumSize(QtCore.QSize(300, 30))
+        self.comprimento_cima.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.comprimento_cima.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.comprimento_cima.setObjectName("comprimento_cima")
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.comprimento_cima)
+        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+        self.doubleSpinBox_comprimento_1 = QtWidgets.QDoubleSpinBox(self.comprimento_cima)
+        self.doubleSpinBox_comprimento_1.setMinimumSize(QtCore.QSize(200, 20))
+        self.doubleSpinBox_comprimento_1.setMaximumSize(QtCore.QSize(200, 20))
+        self.doubleSpinBox_comprimento_1.setStyleSheet("color: rgb(0, 0, 0);\n"
+"background-color: rgb(217, 217, 217);")
+        self.doubleSpinBox_comprimento_1.setButtonSymbols(QtWidgets.QAbstractSpinBox.NoButtons)
+        self.doubleSpinBox_comprimento_1.setMaximum(1e+142)
+        self.doubleSpinBox_comprimento_1.setSingleStep(0.0)
+        self.doubleSpinBox_comprimento_1.setObjectName("doubleSpinBox_comprimento_1")
+        self.horizontalLayout_5.addWidget(self.doubleSpinBox_comprimento_1)
+        self.comboBox_comprimento_1 = QtWidgets.QComboBox(self.comprimento_cima)
+        self.comboBox_comprimento_1.setMinimumSize(QtCore.QSize(50, 20))
+        self.comboBox_comprimento_1.setMaximumSize(QtCore.QSize(50, 20))
+        font = QtGui.QFont()
+        font.setStyleStrategy(QtGui.QFont.PreferAntialias)
+        self.comboBox_comprimento_1.setFont(font)
+        self.comboBox_comprimento_1.setStyleSheet("color: rgb(0,0,0);\n"
+"background-color: rgb(217, 217, 217);")
+        self.comboBox_comprimento_1.setObjectName("comboBox_comprimento_1")
+        self.comboBox_comprimento_1.addItem("")
+        self.comboBox_comprimento_1.addItem("")
+        self.comboBox_comprimento_1.addItem("")
+        self.comboBox_comprimento_1.addItem("")
+        self.comboBox_comprimento_1.addItem("")
+        self.comboBox_comprimento_1.addItem("")
+        self.comboBox_comprimento_1.addItem("")
+        self.horizontalLayout_5.addWidget(self.comboBox_comprimento_1)
+        self.verticalLayout_6.addWidget(self.comprimento_cima, 0, QtCore.Qt.AlignHCenter)
+        self.label_5 = QtWidgets.QLabel(self.conteudo_comprimento)
+        self.label_5.setMinimumSize(QtCore.QSize(0, 30))
+        self.label_5.setMaximumSize(QtCore.QSize(16777215, 30))
+        self.label_5.setObjectName("label_5")
+        self.verticalLayout_6.addWidget(self.label_5)
+        self.comprimento_baixo = QtWidgets.QFrame(self.conteudo_comprimento)
+        self.comprimento_baixo.setMinimumSize(QtCore.QSize(300, 30))
+        self.comprimento_baixo.setMaximumSize(QtCore.QSize(300, 30))
+        self.comprimento_baixo.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.comprimento_baixo.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.comprimento_baixo.setObjectName("comprimento_baixo")
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout(self.comprimento_baixo)
+        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+        self.doubleSpinBox_comprimento_3 = QtWidgets.QDoubleSpinBox(self.comprimento_baixo)
+        self.doubleSpinBox_comprimento_3.setMinimumSize(QtCore.QSize(200, 20))
+        self.doubleSpinBox_comprimento_3.setMaximumSize(QtCore.QSize(200, 20))
+        self.doubleSpinBox_comprimento_3.setStyleSheet("color: rgb(0, 0, 0);\n"
+"background-color: rgb(217, 217, 217);")
+        self.doubleSpinBox_comprimento_3.setButtonSymbols(QtWidgets.QAbstractSpinBox.NoButtons)
+        self.doubleSpinBox_comprimento_3.setMaximum(1e+142)
+        self.doubleSpinBox_comprimento_3.setSingleStep(0.0)
+        self.doubleSpinBox_comprimento_3.setObjectName("doubleSpinBox_comprimento_3")
+        self.horizontalLayout_6.addWidget(self.doubleSpinBox_comprimento_3)
+        self.comboBox_comprimento_3 = QtWidgets.QComboBox(self.comprimento_baixo)
+        self.comboBox_comprimento_3.setMinimumSize(QtCore.QSize(50, 20))
+        self.comboBox_comprimento_3.setMaximumSize(QtCore.QSize(50, 20))
+        font = QtGui.QFont()
+        font.setStyleStrategy(QtGui.QFont.PreferAntialias)
+        self.comboBox_comprimento_3.setFont(font)
+        self.comboBox_comprimento_3.setStyleSheet("color: rgb(0,0,0);\n"
+"background-color: rgb(217, 217, 217);")
+        self.comboBox_comprimento_3.setObjectName("comboBox_comprimento_3")
+        self.comboBox_comprimento_3.addItem("")
+        self.comboBox_comprimento_3.addItem("")
+        self.comboBox_comprimento_3.addItem("")
+        self.comboBox_comprimento_3.addItem("")
+        self.comboBox_comprimento_3.addItem("")
+        self.comboBox_comprimento_3.addItem("")
+        self.comboBox_comprimento_3.addItem("")
+        self.horizontalLayout_6.addWidget(self.comboBox_comprimento_3)
+        self.verticalLayout_6.addWidget(self.comprimento_baixo, 0, QtCore.Qt.AlignHCenter)
+        self.verticalLayout_2.addWidget(self.conteudo_comprimento)
+        self.stackedWidget.addWidget(self.pagina_comprimento)
+        self.pagina_area = QtWidgets.QWidget()
+        self.pagina_area.setObjectName("pagina_area")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.pagina_area)
+        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_4.setSpacing(0)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.barra_superior_area = QtWidgets.QFrame(self.pagina_area)
+        self.barra_superior_area.setMinimumSize(QtCore.QSize(0, 50))
+        self.barra_superior_area.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.barra_superior_area.setStyleSheet("background-color: rgb(8, 241, 89);")
+        self.barra_superior_area.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.barra_superior_area.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.barra_superior_area.setObjectName("barra_superior_area")
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.barra_superior_area)
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.label_2 = QtWidgets.QLabel(self.barra_superior_area)
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout_3.addWidget(self.label_2)
+        self.verticalLayout_4.addWidget(self.barra_superior_area)
+        self.conteudo_area = QtWidgets.QFrame(self.pagina_area)
+        self.conteudo_area.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.conteudo_area.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.conteudo_area.setObjectName("conteudo_area")
+        self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.conteudo_area)
+        self.verticalLayout_7.setContentsMargins(0, 100, 0, 100)
+        self.verticalLayout_7.setSpacing(0)
+        self.verticalLayout_7.setObjectName("verticalLayout_7")
+        self.label_7 = QtWidgets.QLabel(self.conteudo_area)
+        self.label_7.setMaximumSize(QtCore.QSize(16777215, 30))
+        self.label_7.setObjectName("label_7")
+        self.verticalLayout_7.addWidget(self.label_7)
+        self.area_cima = QtWidgets.QFrame(self.conteudo_area)
+        self.area_cima.setMinimumSize(QtCore.QSize(300, 30))
+        self.area_cima.setMaximumSize(QtCore.QSize(300, 30))
+        self.area_cima.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.area_cima.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.area_cima.setObjectName("area_cima")
+        self.horizontalLayout_8 = QtWidgets.QHBoxLayout(self.area_cima)
+        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
+        self.doubleSpinBox_area_1 = QtWidgets.QDoubleSpinBox(self.area_cima)
+        self.doubleSpinBox_area_1.setMinimumSize(QtCore.QSize(200, 20))
+        self.doubleSpinBox_area_1.setMaximumSize(QtCore.QSize(200, 20))
+        self.doubleSpinBox_area_1.setStyleSheet("color: rgb(0, 0, 0);\n"
+"background-color: rgb(217, 217, 217);")
+        self.doubleSpinBox_area_1.setButtonSymbols(QtWidgets.QAbstractSpinBox.NoButtons)
+        self.doubleSpinBox_area_1.setMaximum(1e+142)
+        self.doubleSpinBox_area_1.setSingleStep(0.0)
+        self.doubleSpinBox_area_1.setObjectName("doubleSpinBox_area_1")
+        self.horizontalLayout_8.addWidget(self.doubleSpinBox_area_1)
+        self.comboBox_area_1 = QtWidgets.QComboBox(self.area_cima)
+        self.comboBox_area_1.setMinimumSize(QtCore.QSize(50, 20))
+        self.comboBox_area_1.setMaximumSize(QtCore.QSize(50, 20))
+        font = QtGui.QFont()
+        font.setStyleStrategy(QtGui.QFont.PreferAntialias)
+        self.comboBox_area_1.setFont(font)
+        self.comboBox_area_1.setStyleSheet("color: rgb(0,0,0);\n"
+"background-color: rgb(217, 217, 217);")
+        self.comboBox_area_1.setObjectName("comboBox_area_1")
+        self.comboBox_area_1.addItem("")
+        self.comboBox_area_1.addItem("")
+        self.comboBox_area_1.addItem("")
+        self.comboBox_area_1.addItem("")
+        self.comboBox_area_1.addItem("")
+        self.comboBox_area_1.addItem("")
+        self.comboBox_area_1.addItem("")
+        self.horizontalLayout_8.addWidget(self.comboBox_area_1)
+        self.verticalLayout_7.addWidget(self.area_cima, 0, QtCore.Qt.AlignHCenter)
+        self.label_6 = QtWidgets.QLabel(self.conteudo_area)
+        self.label_6.setMinimumSize(QtCore.QSize(0, 30))
+        self.label_6.setMaximumSize(QtCore.QSize(16777215, 30))
+        self.label_6.setObjectName("label_6")
+        self.verticalLayout_7.addWidget(self.label_6, 0, QtCore.Qt.AlignHCenter)
+        self.area_baixo = QtWidgets.QFrame(self.conteudo_area)
+        self.area_baixo.setMinimumSize(QtCore.QSize(300, 30))
+        self.area_baixo.setMaximumSize(QtCore.QSize(300, 30))
+        self.area_baixo.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.area_baixo.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.area_baixo.setObjectName("area_baixo")
+        self.horizontalLayout_7 = QtWidgets.QHBoxLayout(self.area_baixo)
+        self.horizontalLayout_7.setObjectName("horizontalLayout_7")
+        self.doubleSpinBox_area_2 = QtWidgets.QDoubleSpinBox(self.area_baixo)
+        self.doubleSpinBox_area_2.setMinimumSize(QtCore.QSize(200, 20))
+        self.doubleSpinBox_area_2.setMaximumSize(QtCore.QSize(200, 20))
+        self.doubleSpinBox_area_2.setStyleSheet("color: rgb(0, 0, 0);\n"
+"background-color: rgb(217, 217, 217);")
+        self.doubleSpinBox_area_2.setButtonSymbols(QtWidgets.QAbstractSpinBox.NoButtons)
+        self.doubleSpinBox_area_2.setMaximum(1e+142)
+        self.doubleSpinBox_area_2.setSingleStep(0.0)
+        self.doubleSpinBox_area_2.setObjectName("doubleSpinBox_area_2")
+        self.horizontalLayout_7.addWidget(self.doubleSpinBox_area_2)
+        self.comboBox_area_2 = QtWidgets.QComboBox(self.area_baixo)
+        self.comboBox_area_2.setMinimumSize(QtCore.QSize(50, 20))
+        self.comboBox_area_2.setMaximumSize(QtCore.QSize(50, 20))
+        font = QtGui.QFont()
+        font.setStyleStrategy(QtGui.QFont.PreferAntialias)
+        self.comboBox_area_2.setFont(font)
+        self.comboBox_area_2.setStyleSheet("color: rgb(0,0,0);\n"
+"background-color: rgb(217, 217, 217);")
+        self.comboBox_area_2.setObjectName("comboBox_area_2")
+        self.comboBox_area_2.addItem("")
+        self.comboBox_area_2.addItem("")
+        self.comboBox_area_2.addItem("")
+        self.comboBox_area_2.addItem("")
+        self.comboBox_area_2.addItem("")
+        self.comboBox_area_2.addItem("")
+        self.comboBox_area_2.addItem("")
+        self.horizontalLayout_7.addWidget(self.comboBox_area_2)
+        self.verticalLayout_7.addWidget(self.area_baixo, 0, QtCore.Qt.AlignHCenter)
+        self.verticalLayout_4.addWidget(self.conteudo_area)
+        self.stackedWidget.addWidget(self.pagina_area)
+        self.pagina_volume = QtWidgets.QWidget()
+        self.pagina_volume.setObjectName("pagina_volume")
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.pagina_volume)
+        self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_5.setSpacing(0)
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.barra_superior_volume = QtWidgets.QFrame(self.pagina_volume)
+        self.barra_superior_volume.setMinimumSize(QtCore.QSize(0, 50))
+        self.barra_superior_volume.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.barra_superior_volume.setStyleSheet("background-color: rgb(8, 241, 89);")
+        self.barra_superior_volume.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.barra_superior_volume.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.barra_superior_volume.setObjectName("barra_superior_volume")
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.barra_superior_volume)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.label_3 = QtWidgets.QLabel(self.barra_superior_volume)
+        self.label_3.setObjectName("label_3")
+        self.horizontalLayout_4.addWidget(self.label_3)
+        self.verticalLayout_5.addWidget(self.barra_superior_volume)
+        self.conteudo_volume = QtWidgets.QFrame(self.pagina_volume)
+        self.conteudo_volume.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.conteudo_volume.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.conteudo_volume.setObjectName("conteudo_volume")
+        self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.conteudo_volume)
+        self.verticalLayout_8.setContentsMargins(0, 100, 0, 100)
+        self.verticalLayout_8.setSpacing(0)
+        self.verticalLayout_8.setObjectName("verticalLayout_8")
+        self.label_9 = QtWidgets.QLabel(self.conteudo_volume)
+        self.label_9.setMaximumSize(QtCore.QSize(16777215, 30))
+        self.label_9.setObjectName("label_9")
+        self.verticalLayout_8.addWidget(self.label_9)
+        self.volume_cima = QtWidgets.QFrame(self.conteudo_volume)
+        self.volume_cima.setMinimumSize(QtCore.QSize(300, 30))
+        self.volume_cima.setMaximumSize(QtCore.QSize(300, 30))
+        self.volume_cima.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.volume_cima.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.volume_cima.setObjectName("volume_cima")
+        self.horizontalLayout_9 = QtWidgets.QHBoxLayout(self.volume_cima)
+        self.horizontalLayout_9.setObjectName("horizontalLayout_9")
+        self.doubleSpinBox_volume_1 = QtWidgets.QDoubleSpinBox(self.volume_cima)
+        self.doubleSpinBox_volume_1.setMinimumSize(QtCore.QSize(200, 20))
+        self.doubleSpinBox_volume_1.setMaximumSize(QtCore.QSize(200, 20))
+        self.doubleSpinBox_volume_1.setStyleSheet("color: rgb(0, 0, 0);\n"
+"background-color: rgb(217, 217, 217);")
+        self.doubleSpinBox_volume_1.setButtonSymbols(QtWidgets.QAbstractSpinBox.NoButtons)
+        self.doubleSpinBox_volume_1.setMaximum(1e+142)
+        self.doubleSpinBox_volume_1.setSingleStep(0.0)
+        self.doubleSpinBox_volume_1.setObjectName("doubleSpinBox_volume_1")
+        self.horizontalLayout_9.addWidget(self.doubleSpinBox_volume_1)
+        self.comboBox_volume_1 = QtWidgets.QComboBox(self.volume_cima)
+        self.comboBox_volume_1.setMinimumSize(QtCore.QSize(50, 20))
+        self.comboBox_volume_1.setMaximumSize(QtCore.QSize(50, 20))
+        font = QtGui.QFont()
+        font.setStyleStrategy(QtGui.QFont.PreferAntialias)
+        self.comboBox_volume_1.setFont(font)
+        self.comboBox_volume_1.setStyleSheet("color: rgb(0,0,0);\n"
+"background-color: rgb(217, 217, 217);")
+        self.comboBox_volume_1.setObjectName("comboBox_volume_1")
+        self.comboBox_volume_1.addItem("")
+        self.comboBox_volume_1.addItem("")
+        self.comboBox_volume_1.addItem("")
+        self.comboBox_volume_1.addItem("")
+        self.comboBox_volume_1.addItem("")
+        self.comboBox_volume_1.addItem("")
+        self.comboBox_volume_1.addItem("")
+        self.horizontalLayout_9.addWidget(self.comboBox_volume_1)
+        self.verticalLayout_8.addWidget(self.volume_cima, 0, QtCore.Qt.AlignHCenter)
+        self.label_8 = QtWidgets.QLabel(self.conteudo_volume)
+        self.label_8.setMinimumSize(QtCore.QSize(0, 30))
+        self.label_8.setMaximumSize(QtCore.QSize(16777215, 30))
+        self.label_8.setObjectName("label_8")
+        self.verticalLayout_8.addWidget(self.label_8)
+        self.volume_baixo = QtWidgets.QFrame(self.conteudo_volume)
+        self.volume_baixo.setMinimumSize(QtCore.QSize(300, 30))
+        self.volume_baixo.setMaximumSize(QtCore.QSize(300, 30))
+        self.volume_baixo.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.volume_baixo.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.volume_baixo.setObjectName("volume_baixo")
+        self.horizontalLayout_10 = QtWidgets.QHBoxLayout(self.volume_baixo)
+        self.horizontalLayout_10.setObjectName("horizontalLayout_10")
+        self.doubleSpinBox_volume_2 = QtWidgets.QDoubleSpinBox(self.volume_baixo)
+        self.doubleSpinBox_volume_2.setMinimumSize(QtCore.QSize(200, 20))
+        self.doubleSpinBox_volume_2.setMaximumSize(QtCore.QSize(200, 20))
+        self.doubleSpinBox_volume_2.setStyleSheet("color: rgb(0, 0, 0);\n"
+"background-color: rgb(217, 217, 217);")
+        self.doubleSpinBox_volume_2.setButtonSymbols(QtWidgets.QAbstractSpinBox.NoButtons)
+        self.doubleSpinBox_volume_2.setMaximum(1e+142)
+        self.doubleSpinBox_volume_2.setSingleStep(0.0)
+        self.doubleSpinBox_volume_2.setObjectName("doubleSpinBox_volume_2")
+        self.horizontalLayout_10.addWidget(self.doubleSpinBox_volume_2)
+        self.comboBox_volume_2 = QtWidgets.QComboBox(self.volume_baixo)
+        self.comboBox_volume_2.setMinimumSize(QtCore.QSize(50, 20))
+        self.comboBox_volume_2.setMaximumSize(QtCore.QSize(50, 20))
+        font = QtGui.QFont()
+        font.setStyleStrategy(QtGui.QFont.PreferAntialias)
+        self.comboBox_volume_2.setFont(font)
+        self.comboBox_volume_2.setStyleSheet("color: rgb(0,0,0);\n"
+"background-color: rgb(217, 217, 217);")
+        self.comboBox_volume_2.setObjectName("comboBox_volume_2")
+        self.comboBox_volume_2.addItem("")
+        self.comboBox_volume_2.addItem("")
+        self.comboBox_volume_2.addItem("")
+        self.comboBox_volume_2.addItem("")
+        self.comboBox_volume_2.addItem("")
+        self.comboBox_volume_2.addItem("")
+        self.comboBox_volume_2.addItem("")
+        self.horizontalLayout_10.addWidget(self.comboBox_volume_2)
+        self.verticalLayout_8.addWidget(self.volume_baixo, 0, QtCore.Qt.AlignHCenter)
+        self.verticalLayout_5.addWidget(self.conteudo_volume)
+        self.stackedWidget.addWidget(self.pagina_volume)
+        self.horizontalLayout.addWidget(self.stackedWidget)
+        self.verticalLayout.addWidget(self.fundo)
+        Conversor.setCentralWidget(self.centralwidget)
+        self.doubleSpinBox_comprimento_3.setEnabled(False)
+        self.doubleSpinBox_area_2.setEnabled(False)
+        self.doubleSpinBox_volume_2.setEnabled(False)
+        
+        self.bt_comprimento.clicked.connect(lambda : self.stackedWidget.setCurrentWidget(self.pagina_comprimento))
+        self.bt_area.clicked.connect(lambda : self.stackedWidget.setCurrentWidget(self.pagina_area))
+        self.bt_volume.clicked.connect(lambda : self.stackedWidget.setCurrentWidget(self.pagina_volume))
+        
+        self.doubleSpinBox_comprimento_1.valueChanged.connect(self.con_comprimento)
+        self.comboBox_comprimento_1.currentTextChanged.connect(self.con_comprimento)
+        self.comboBox_comprimento_3.currentTextChanged.connect(self.con_comprimento)
+        
+        self.doubleSpinBox_area_1.valueChanged.connect(self.con_area)
+        self.comboBox_area_1.currentTextChanged.connect(self.con_area)
+        self.comboBox_area_2.currentTextChanged.connect(self.con_area)
+        
+        self.doubleSpinBox_volume_1.valueChanged.connect(self.con_volume)
+        self.comboBox_volume_1.currentTextChanged.connect(self.con_volume)
+        self.comboBox_volume_2.currentTextChanged.connect(self.con_volume)
+        
+        self.bt_sobre.clicked.connect(self.bt_sobre_click)
+
+        self.retranslateUi(Conversor)
+        QtCore.QMetaObject.connectSlotsByName(Conversor)
+
+
+    def retranslateUi(self, Conversor):
+        _translate = QtCore.QCoreApplication.translate
+        Conversor.setWindowTitle(_translate("Conversor", "Conversor"))
+        self.bt_comprimento.setText(_translate("Conversor", "Comprimento"))
+        self.bt_area.setText(_translate("Conversor", "Area"))
+        self.bt_volume.setText(_translate("Conversor", "Volume"))
+        self.bt_sobre.setText(_translate("Conversor", "Sobre"))
+        self.label.setText(_translate("Conversor", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:600; color:#313131;\">Medidas (comprimento)</span></p></body></html>"))
+        self.label_4.setText(_translate("Conversor", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; color:#dadada;\">Coloque os valores abaixo</span></p></body></html>"))
+        self.comboBox_comprimento_1.setCurrentText(_translate("Conversor", "m"))
+        self.comboBox_comprimento_1.setItemText(0, _translate("Conversor", "km"))
+        self.comboBox_comprimento_1.setItemText(1, _translate("Conversor", "hm"))
+        self.comboBox_comprimento_1.setItemText(2, _translate("Conversor", "dam"))
+        self.comboBox_comprimento_1.setItemText(3, _translate("Conversor", "m"))
+        self.comboBox_comprimento_1.setItemText(4, _translate("Conversor", "dm"))
+        self.comboBox_comprimento_1.setItemText(5, _translate("Conversor", "cm"))
+        self.comboBox_comprimento_1.setItemText(6, _translate("Conversor", "mm"))
+        self.label_5.setText(_translate("Conversor", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; color:#dadada;\">Selecione a medida e tenha o resultado abaixo</span></p></body></html>"))
+        self.comboBox_comprimento_3.setCurrentText(_translate("Conversor", "m"))
+        self.comboBox_comprimento_3.setItemText(0, _translate("Conversor", "km"))
+        self.comboBox_comprimento_3.setItemText(1, _translate("Conversor", "hm"))
+        self.comboBox_comprimento_3.setItemText(2, _translate("Conversor", "dam"))
+        self.comboBox_comprimento_3.setItemText(3, _translate("Conversor", "m"))
+        self.comboBox_comprimento_3.setItemText(4, _translate("Conversor", "dm"))
+        self.comboBox_comprimento_3.setItemText(5, _translate("Conversor", "cm"))
+        self.comboBox_comprimento_3.setItemText(6, _translate("Conversor", "mm"))
+        self.label_2.setText(_translate("Conversor", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:600; color:#313131;\">Medidas (área)</span></p></body></html>"))
+        self.label_7.setText(_translate("Conversor", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; color:#dadada;\">Coloque os valores abaixo</span></p></body></html>"))
+        self.comboBox_area_1.setCurrentText(_translate("Conversor", "m²"))
+        self.comboBox_area_1.setItemText(0, _translate("Conversor", "km²"))
+        self.comboBox_area_1.setItemText(1, _translate("Conversor", "hm²"))
+        self.comboBox_area_1.setItemText(2, _translate("Conversor", "dam²"))
+        self.comboBox_area_1.setItemText(3, _translate("Conversor", "m²"))
+        self.comboBox_area_1.setItemText(4, _translate("Conversor", "dm²"))
+        self.comboBox_area_1.setItemText(5, _translate("Conversor", "cm²"))
+        self.comboBox_area_1.setItemText(6, _translate("Conversor", "mm²"))
+        self.label_6.setText(_translate("Conversor", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; color:#dadada;\">Selecione a medida e tenha o resultado abaixo</span></p></body></html>"))
+        self.comboBox_area_2.setCurrentText(_translate("Conversor", "m²"))
+        self.comboBox_area_2.setItemText(0, _translate("Conversor", "km²"))
+        self.comboBox_area_2.setItemText(1, _translate("Conversor", "hm²"))
+        self.comboBox_area_2.setItemText(2, _translate("Conversor", "dam²"))
+        self.comboBox_area_2.setItemText(3, _translate("Conversor", "m²"))
+        self.comboBox_area_2.setItemText(4, _translate("Conversor", "dm²"))
+        self.comboBox_area_2.setItemText(5, _translate("Conversor", "cm²"))
+        self.comboBox_area_2.setItemText(6, _translate("Conversor", "mm²"))
+        self.label_3.setText(_translate("Conversor", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:600; color:#313131;\">Medidas (volume)</span></p></body></html>"))
+        self.label_9.setText(_translate("Conversor", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; color:#dadada;\">Coloque os valores abaixo</span></p></body></html>"))
+        self.comboBox_volume_1.setCurrentText(_translate("Conversor", "m³"))
+        self.comboBox_volume_1.setItemText(0, _translate("Conversor", "km³"))
+        self.comboBox_volume_1.setItemText(1, _translate("Conversor", "hm³"))
+        self.comboBox_volume_1.setItemText(2, _translate("Conversor", "dam³"))
+        self.comboBox_volume_1.setItemText(3, _translate("Conversor", "m³"))
+        self.comboBox_volume_1.setItemText(4, _translate("Conversor", "dm³"))
+        self.comboBox_volume_1.setItemText(5, _translate("Conversor", "cm³"))
+        self.comboBox_volume_1.setItemText(6, _translate("Conversor", "mm³"))
+        self.label_8.setText(_translate("Conversor", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; color:#dadada;\">Selecione a medida e tenha o resultado abaixo</span></p></body></html>"))
+        self.comboBox_volume_2.setCurrentText(_translate("Conversor", "m³"))
+        self.comboBox_volume_2.setItemText(0, _translate("Conversor", "km³"))
+        self.comboBox_volume_2.setItemText(1, _translate("Conversor", "hm³"))
+        self.comboBox_volume_2.setItemText(2, _translate("Conversor", "dam³"))
+        self.comboBox_volume_2.setItemText(3, _translate("Conversor", "m³"))
+        self.comboBox_volume_2.setItemText(4, _translate("Conversor", "dm³"))
+        self.comboBox_volume_2.setItemText(5, _translate("Conversor", "cm³"))
+        self.comboBox_volume_2.setItemText(6, _translate("Conversor", "mm³"))
+        
+    def con_comprimento(self):
+        valor = self.doubleSpinBox_comprimento_1.value()
+        if self.comboBox_comprimento_1.currentText() == "km":
+                valor = valor*1000
+        elif self.comboBox_comprimento_1.currentText() == "hm":
+                valor = valor*100
+        elif self.comboBox_comprimento_1.currentText() == "dam":
+                valor = valor*10
+        elif self.comboBox_comprimento_1.currentText() == "dm":
+                valor = valor/10
+        elif self.comboBox_comprimento_1.currentText() == "cm":
+                valor = valor/100
+        elif self.comboBox_comprimento_1.currentText() == "mm":
+                valor = valor/1000
+        
+        if self.comboBox_comprimento_3.currentText() == "km":
+                valor = valor/1000
+        elif self.comboBox_comprimento_3.currentText() == "hm":
+                valor = valor/100
+        elif self.comboBox_comprimento_3.currentText() == "dam":
+                valor = valor/10
+        elif self.comboBox_comprimento_3.currentText() == "dm":
+                valor = valor*10
+        elif self.comboBox_comprimento_3.currentText() == "cm":
+                valor = valor*100
+        elif self.comboBox_comprimento_3.currentText() == "mm":
+                valor = valor*1000
+        self.doubleSpinBox_comprimento_3.setValue(valor)
+
+    def con_area(self):
+        valor = self.doubleSpinBox_area_1.value()
+        if self.comboBox_area_1.currentText() == "km²":
+                valor = valor*1000000
+        elif self.comboBox_area_1.currentText() == "hm²":
+                valor = valor*10000
+        elif self.comboBox_area_1.currentText() == "dam²":
+                valor = valor*100
+        elif self.comboBox_area_1.currentText() == "dm²":
+                valor = valor/100
+        elif self.comboBox_area_1.currentText() == "cm²":
+                valor = valor/10000
+        elif self.comboBox_area_1.currentText() == "mm²":
+                valor = valor/1000000
+        
+        if self.comboBox_area_2.currentText() == "km²":
+                valor = valor/1000000
+        elif self.comboBox_area_2.currentText() == "hm²":
+                valor = valor/10000
+        elif self.comboBox_area_2.currentText() == "dam²":
+                valor = valor/100
+        elif self.comboBox_area_2.currentText() == "dm²":
+                valor = valor*100
+        elif self.comboBox_area_2.currentText() == "cm²":
+                valor = valor*10000
+        elif self.comboBox_area_2.currentText() == "mm²":
+                valor = valor*1000000
+        self.doubleSpinBox_area_2.setValue(valor)
+        
+    def con_volume(self):
+        valor = self.doubleSpinBox_volume_1.value()
+        if self.comboBox_volume_1.currentText() == "km³":
+                valor = valor*1000000000
+        elif self.comboBox_volume_1.currentText() == "hm³":
+                valor = valor*1000000
+        elif self.comboBox_volume_1.currentText() == "dam³":
+                valor = valor*1000
+        elif self.comboBox_volume_1.currentText() == "dm³":
+                valor = valor/1000
+        elif self.comboBox_volume_1.currentText() == "cm³":
+                valor = valor/1000000
+        elif self.comboBox_volume_1.currentText() == "mm³":
+                valor = valor/1000000000
+        
+        if self.comboBox_volume_2.currentText() == "km³":
+                valor = valor/1000000000
+        elif self.comboBox_volume_2.currentText() == "hm³":
+                valor = valor/1000000
+        elif self.comboBox_volume_2.currentText() == "dam³":
+                valor = valor/1000
+        elif self.comboBox_volume_2.currentText() == "dm³":
+                valor = valor*1000
+        elif self.comboBox_volume_2.currentText() == "cm³":
+                valor = valor*1000000
+        elif self.comboBox_volume_2.currentText() == "mm³":
+                valor = valor*1000000000
+        self.doubleSpinBox_volume_2.setValue(valor)
+
+    def bt_sobre_click(self):
+        from Sobre import Ui_Sobre
+        self.janela = QtWidgets.QMainWindow()
+        self.sobre = Ui_Sobre()
+        self.sobre.setupUi(self.janela)
+        self.janela.show()
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Conversor = QtWidgets.QMainWindow()
+    ui = Ui_Conversor()
+    ui.setupUi(Conversor)
+    Conversor.show()
+    sys.exit(app.exec_())
