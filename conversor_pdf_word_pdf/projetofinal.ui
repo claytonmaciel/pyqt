@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>635</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Conversor PDF e WORD</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>iconenome.png</normaloff>iconenome.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0)</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>230</y>
+            <width>291</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 87 8pt &quot;Arial Black&quot;;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;Procure a pasta de criação do arquivo PDF:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>40</y>
+            <width>361</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>titulo.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>170</y>
+            <width>51</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>iconeword.png</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>iconepdf.png</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../Downloads/arquivonome.png</pixmap>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QPushButton" name="botao_word">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>190</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(131, 197, 255);
+border-radius: 10px;
+font: 8pt &quot;Gill Sans Ultra Bold&quot;;
+color: white;
+
+}
+QPushButton:hover {
+   background-color: rgb(4, 75, 167);
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Procurar</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="botao_pdf">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>250</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(131, 197, 255);
+border-radius: 10px;
+font: 8pt &quot;Gill Sans Ultra Bold&quot;;
+color: white;
+
+}
+QPushButton:hover {
+   background-color: rgb(4, 75, 167);
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Procurar</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>170</y>
+            <width>301</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 87 8pt &quot;Arial Black&quot;;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;Procure o arquivo WORD que deseja converter:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>280</y>
+            <width>141</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 87 8pt &quot;Arial Black&quot;;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;Nomeie o arquivo PDF:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="fileword">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>190</y>
+            <width>389</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="palette">
+           <palette>
+            <active>
+             <colorrole role="WindowText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Button">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>131</red>
+                <green>197</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Text">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="ButtonText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Base">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>131</red>
+                <green>197</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Window">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>131</red>
+                <green>197</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="PlaceholderText">
+              <brush brushstyle="NoBrush">
+               <color alpha="128">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </active>
+            <inactive>
+             <colorrole role="WindowText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Button">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>131</red>
+                <green>197</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Text">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="ButtonText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Base">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>131</red>
+                <green>197</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Window">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>131</red>
+                <green>197</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="PlaceholderText">
+              <brush brushstyle="NoBrush">
+               <color alpha="128">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </inactive>
+            <disabled>
+             <colorrole role="WindowText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Button">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>131</red>
+                <green>197</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Text">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="ButtonText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Base">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>131</red>
+                <green>197</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Window">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>131</red>
+                <green>197</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="PlaceholderText">
+              <brush brushstyle="NoBrush">
+               <color alpha="128">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </disabled>
+           </palette>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+background: rgb(131, 197, 255);
+border: 2px solid #55aaff;
+border-radius: 10px;
+color: rgb(255, 255, 255)
+}
+
+QLineEdit:focus {
+border: 2px solid rgb(4, 75, 167)
+
+}
+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="nomeie_pdf">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>300</y>
+            <width>389</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+background: rgb(131, 197, 255);
+border: 2px solid #55aaff;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+}
+
+QLineEdit:focus {
+border: 2px solid rgb(4, 75, 167)
+
+}
+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="filepdf">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>250</y>
+            <width>389</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+background: rgb(131, 197, 255);
+border: 2px solid #55aaff;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+
+}
+
+QLineEdit:focus {
+border: 2px solid rgb(4, 75, 167)
+
+}
+</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="converter">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>340</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(131, 197, 255);
+border-radius: 10px;
+font: 8pt &quot;Gill Sans Ultra Bold&quot;;
+color: white;
+
+}
+QPushButton:hover {
+   background-color: rgb(4, 75, 167);
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Converter</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pdfparaword">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>340</y>
+            <width>101</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(131, 197, 255);
+border-radius: 10px;
+font: 8pt &quot;Gill Sans Ultra Bold&quot;;
+color: white;
+
+}
+QPushButton:hover {
+   background-color: rgb(4, 75, 167);
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Pdf --&gt; Word</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="botao_obs">
+          <property name="geometry">
+           <rect>
+            <x>480</x>
+            <y>300</y>
+            <width>31</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(131, 197, 255);
+border-radius: 10px;
+font: 8pt &quot;Gill Sans Ultra Bold&quot;;
+color: white;
+
+}
+QPushButton:hover {
+   background-color: rgb(4, 75, 167);
+
+}</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="sobre_1">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>370</y>
+            <width>51</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(255, 255, 255);
+font: 87 8pt &quot;Arial Black&quot;;
+color: rgb(131, 197, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string>Sobre</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_25">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>370</y>
+            <width>21</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>iconeqr.png</pixmap>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>40</y>
+            <width>361</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>titulo.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_4">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>170</y>
+            <width>51</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_18">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>iconepdf.png</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_19">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>iconeword.png</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_20">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../Downloads/arquivonome.png</pixmap>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>170</y>
+            <width>271</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 87 8pt &quot;Arial Black&quot;;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;Procure o arquivo PDF que deseja converter:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="filepdf_2">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>190</y>
+            <width>389</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+background: rgb(131, 197, 255);
+border: 2px solid #55aaff;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+
+}
+
+QLineEdit:focus {
+border: 2px solid rgb(4, 75, 167)
+
+}
+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="fileword_2">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>250</y>
+            <width>389</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+background: rgb(131, 197, 255);
+border: 2px solid #55aaff;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+
+}
+
+QLineEdit:focus {
+border: 2px solid rgb(4, 75, 167)
+
+}
+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="nomeie_pdf_2">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>300</y>
+            <width>389</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+background: rgb(131, 197, 255);
+border: 2px solid #55aaff;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+}
+
+QLineEdit:focus {
+border: 2px solid rgb(4, 75, 167)
+
+}
+</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="botao_pdf_2">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>190</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(131, 197, 255);
+border-radius: 10px;
+	font: 8pt &quot;Gill Sans Ultra Bold&quot;;
+color: white;
+
+}
+QPushButton:hover {
+   background-color: rgb(4, 75, 167);
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Procurar</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="botao_word_2">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>250</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(131, 197, 255);
+border-radius: 10px;
+font: 8pt &quot;Gill Sans Ultra Bold&quot;;
+color: white;
+
+}
+QPushButton:hover {
+   background-color: rgb(4, 75, 167);
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Procurar</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="converter_2">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>340</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(131, 197, 255);
+border-radius: 10px;
+font: 8pt &quot;Gill Sans Ultra Bold&quot;;
+color: white;
+
+}
+QPushButton:hover {
+   background-color: rgb(4, 75, 167);
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Converter</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_22">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>230</y>
+            <width>291</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 87 8pt &quot;Arial Black&quot;;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;Procure a pasta de criação do arquivo WORD:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>280</y>
+            <width>161</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 87 8pt &quot;Arial Black&quot;;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;Nomeie o arquivo WORD:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_24">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>370</y>
+            <width>21</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>iconeqr.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="sobre_2">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>370</y>
+            <width>51</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(255, 255, 255);
+font: 87 8pt &quot;Arial Black&quot;;
+color: rgb(131, 197, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string>Sobre</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="wordparapdf">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>340</y>
+            <width>101</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(131, 197, 255);
+border-radius: 10px;
+font: 8pt &quot;Gill Sans Ultra Bold&quot;;
+color: white;
+
+}
+QPushButton:hover {
+   background-color: rgb(4, 75, 167);
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Word --&gt; Pdf</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="botao_obs_2">
+          <property name="geometry">
+           <rect>
+            <x>480</x>
+            <y>300</y>
+            <width>31</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(131, 197, 255);
+border-radius: 10px;
+font: 8pt &quot;Gill Sans Ultra Bold&quot;;
+color: white;
+
+}
+QPushButton:hover {
+   background-color: rgb(4, 75, 167);
+
+}</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="botao_obs_3">
+          <property name="geometry">
+           <rect>
+            <x>580</x>
+            <y>20</y>
+            <width>21</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(131, 197, 255);
+border-radius: 10px;
+font: 8pt &quot;Gill Sans Ultra Bold&quot;;
+color: white;
+
+}
+QPushButton:hover {
+   background-color: rgb(4, 75, 167);
+
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Downloads/tocarmusic.png</normaloff>../Downloads/tocarmusic.png</iconset>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="botao_obs_4">
+          <property name="geometry">
+           <rect>
+            <x>580</x>
+            <y>50</y>
+            <width>21</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(131, 197, 255);
+border-radius: 10px;
+font: 8pt &quot;Gill Sans Ultra Bold&quot;;
+color: white;
+
+}
+QPushButton:hover {
+   background-color: rgb(4, 75, 167);
+
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Downloads/pausarmusic.png</normaloff>../Downloads/pausarmusic.png</iconset>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="botao_obs_5">
+          <property name="geometry">
+           <rect>
+            <x>580</x>
+            <y>80</y>
+            <width>21</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgb(131, 197, 255);
+border-radius: 10px;
+font: 8pt &quot;Gill Sans Ultra Bold&quot;;
+color: white;
+
+}
+QPushButton:hover {
+   background-color: rgb(4, 75, 167);
+
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Downloads/reproduzirmusic.png</normaloff>../Downloads/reproduzirmusic.png</iconset>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
