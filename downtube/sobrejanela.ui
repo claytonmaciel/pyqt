@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SOBREJanela</class>
+ <widget class="QMainWindow" name="SOBREJanela">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>340</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Sobre nós - DownTUBE</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>imagens/sobre.png</normaloff>imagens/sobre.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="framebottom">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.272727 rgba(230, 89, 60, 255), stop:0.642045 rgba(255, 59, 59, 255));</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frametop">
+       <property name="geometry">
+        <rect>
+         <x>-2</x>
+         <y>-30</y>
+         <width>604</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>604</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="logoyt">
+        <property name="geometry">
+         <rect>
+          <x>345</x>
+          <y>34</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>imagens/logoyt.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="downtube">
+        <property name="geometry">
+         <rect>
+          <x>416</x>
+          <y>31</y>
+          <width>181</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>imagens/downtubelogo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="iflogo">
+        <property name="geometry">
+         <rect>
+          <x>31</x>
+          <y>39</y>
+          <width>161</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>imagens/iflogoo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="IniTEXTO">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>70</y>
+         <width>321</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Gobold Thin Light&quot;;
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: white;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;Projeto final idealizado para a disciplina de programação&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;orientada e estruturada a objetos.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;Sob orientação do prof. Clayton maciel.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="CriadoresT">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>121</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Gobold Thin Light&quot;;
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: white;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Idealizadores:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;ana clara&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;ruan victor&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;maria eduarda&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;felipe rezes&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;yan lucas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="TutoTEXTO">
+       <property name="geometry">
+        <rect>
+         <x>138</x>
+         <y>160</y>
+         <width>191</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Gobold Thin Light&quot;;
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: white;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Como utilizar o programa:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;1.copie o link desejado do youtube;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;2. cole o link no campo indicado;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;3. escolha a opção para baixar&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;em mp3 ou mp4;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;4. esperar o download finalizar.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="BrincaTEXTO">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>70</y>
+         <width>201</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Gobold Thin Light&quot;;
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: white;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Atenção!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Já atribuiu nota máxima ao projeto?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="SimB1">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>160</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 8pt &quot;Gobold Thin Light&quot;;
+border-style: outset;
+border-width: 2px;
+border-radius: 5px;
+border-color: white;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+font: 8pt &quot;Gobold Thin Light&quot;;
+border-style: outset;
+border-width: 2px;
+border-radius: 5px;
+border-color: grey;
+color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>Sim</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="SimB2">
+       <property name="geometry">
+        <rect>
+         <x>516</x>
+         <y>160</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 8pt &quot;Gobold Thin Light&quot;;
+border-style: outset;
+border-width: 2px;
+border-radius: 5px;
+border-color: white;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+font: 8pt &quot;Gobold Thin Light&quot;;
+border-style: outset;
+border-width: 2px;
+border-radius: 5px;
+border-color: grey;
+color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>Sim</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="BrincaTEXTO_2">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>220</y>
+         <width>201</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Gobold Thin Light&quot;;
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: white;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;o arquivo estará disponível na pasta&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;downloads (criada dentro do próprio &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;python).&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>SimB1</sender>
+   <signal>clicked()</signal>
+   <receiver>SOBREJanela</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>443</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>588</x>
+     <y>-16</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SimB2</sender>
+   <signal>clicked()</signal>
+   <receiver>SOBREJanela</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>553</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
