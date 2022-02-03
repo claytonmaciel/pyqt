@@ -1,0 +1,5 @@
+Atenção!
+Para que o programa funcione corretamente é necessária
+a instalação da biblioteca ascii_magic com o seguinte comando:
+
+pip install ascii_magic

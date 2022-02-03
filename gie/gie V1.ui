@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Extractor</class>
+ <widget class="QMainWindow" name="Extractor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>G.I.E</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../OneDrive/Documentos/Projeto/imagens/icone.png</normaloff>../../OneDrive/Documentos/Projeto/imagens/icone.png</iconset>
+  </property>
+  <property name="toolTipDuration">
+   <number>-5</number>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>20</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="Janela_1">
+   <widget class="QPushButton" name="btn_select">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>370</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(0, 0, 0);
+background-color: rgb(221, 221, 221);
+border-top-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Selecionar imagem</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_extract">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>310</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(221, 221, 221);</string>
+    </property>
+    <property name="text">
+     <string>Extrair</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tela_1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>201</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_sobre">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>10</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>true</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="toolTip">
+     <string comment="sobre" extracomment="sobre">Sobre</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="statusTip">
+     <string>Sobre</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(221, 221, 221);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icone sobre.png</normaloff>icone sobre.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gui">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>651</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>fundo.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="caminho">
+    <property name="geometry">
+     <rect>
+      <x>385</x>
+      <y>300</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="etiqueta">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>270</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Caminho do arquivo:</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="seletor_res">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>230</y>
+      <width>101</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="wrapping">
+     <bool>false</bool>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::UpDownArrows</enum>
+    </property>
+    <property name="specialValueText">
+     <string/>
+    </property>
+    <property name="accelerated">
+     <bool>true</bool>
+    </property>
+    <property name="minimum">
+     <number>50</number>
+    </property>
+    <property name="maximum">
+     <number>1000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="etiqueta2">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>200</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Resolução do texto:</string>
+    </property>
+   </widget>
+   <zorder>gui</zorder>
+   <zorder>btn_select</zorder>
+   <zorder>btn_extract</zorder>
+   <zorder>tela_1</zorder>
+   <zorder>btn_sobre</zorder>
+   <zorder>caminho</zorder>
+   <zorder>etiqueta</zorder>
+   <zorder>seletor_res</zorder>
+   <zorder>etiqueta2</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
