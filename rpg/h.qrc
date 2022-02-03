@@ -1,0 +1,35 @@
+<RCC>
+  <qresource prefix="dice">
+    <file>d20cyan.png</file>
+    <file>d20rosa.png</file>
+    <file>d8cyan.png</file>
+    <file>d8rosa.png</file>
+    <file>d100dcyan.png</file>
+    <file>d100drosa.png</file>
+    <file>d3cyan.png</file>
+    <file>d3rosa.png</file>
+    <file>d100cyan.png</file>
+    <file>d100rosa.png</file>
+    <file>d2cyan.png</file>
+    <file>d2rosa.png</file>
+    <file>d6cyan.png</file>
+    <file>d6rosa.png</file>
+    <file>d10cyan.png</file>
+    <file>d10rosa.png</file>
+    <file>d12cyan.png</file>
+    <file>d4cyan.png</file>
+    <file>d4rosa.png</file>
+    <file>d12rosa.png</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file>elmagoprior.png</file>
+    <file>aditivo.png</file>
+    <file>cavaloroxo.png</file>
+    <file>multiplicativo.png</file>
+    <file>subtrativo.png</file>
+    <file>based.ico</file>
+  </qresource>
+  <qresource prefix="fonts">
+    <file>minecraft_font.ttf</file>
+  </qresource>
+</RCC>
