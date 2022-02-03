@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>391</width>
+      <height>580</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>391</width>
+      <height>580</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>391</width>
+      <height>580</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>25</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>0</y>
+      <width>25</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>-5</x>
+      <y>20</y>
+      <width>461</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>fundo1.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(247, 89, 113);
+font: 8pt &quot;Open Sans&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Sabores de Sundaes:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>25</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>0</y>
+      <width>25</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>0</y>
+      <width>25</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>0</y>
+      <width>25</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>0</y>
+      <width>25</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>0</y>
+      <width>25</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(247, 89, 113);
+font: 8pt &quot;Open Sans&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Tamanhos:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_31">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>109</y>
+      <width>211</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>kisspng-chocolate-ice-cream-milkshake-sundae-ice-cream-con-sundae-5abe752aaef4f3.2537155915224312747166.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="finalizar">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>400</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(247, 89, 113);
+	font: 15pt &quot;Bukhari Script&quot;;
+background-color: rgb(126, 66, 54);
+border-radius: 15px;
+}
+
+QPushButton:hover {
+	background-color: rgb(150, 71, 56);
+}
+QPushButton:pressed {
+	background-color: rgb(100, 66, 49);
+}</string>
+    </property>
+    <property name="text">
+     <string>Finalizar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>0</y>
+      <width>25</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>520</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(247, 89, 113);
+font: 28pt &quot;Bukhari Script&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Sundaes</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(247, 89, 113);
+font: 8pt &quot;Open Sans&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Complementos:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>25</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>266</x>
+      <y>485</y>
+      <width>71</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>6-removebg-preview.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>485</y>
+      <width>71</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>6-removebg-preview.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="voltar">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>60</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(126, 66, 54);
+border-radius: 15px;
+border: 1px solid rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+	background-color: rgb(150, 71, 56);
+}
+QPushButton:pressed {
+	
+	background-color: rgb(100, 66, 49);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>WhatsApp_Image_2022-01-20_at_19.49.15-removebg-preview.png</normaloff>WhatsApp_Image_2022-01-20_at_19.49.15-removebg-preview.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>16</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="tamanhos">
+     <item>
+      <widget class="QRadioButton" name="ml_250">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="ml_375">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>16</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="sabores">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QRadioButton" name="chocolate">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="morango">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="doce_leite">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>16</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="complementos">
+     <item>
+      <widget class="QRadioButton" name="amendoin">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="oreo">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>73</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QLabel {
+background-color: rgb(255, 255, 255);
+border: 4px solid rgb(85, 255, 255);
+color: rgb(247, 89, 113);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;250 mL- R$ 4,00&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>189</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QLabel {
+background-color: rgb(255, 255, 255);
+border: 4px solid rgb(85, 255, 255);
+color: rgb(247, 89, 113);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Morango&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>97</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QLabel {
+background-color: rgb(255, 255, 255);
+border: 4px solid rgb(85, 255, 255);
+color: rgb(247, 89, 113);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;375 mL - R$ 6,00&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_34">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>163</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QLabel {
+background-color: rgb(255, 255, 255);
+border: 4px solid rgb(85, 255, 255);
+color: rgb(247, 89, 113);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Chocolate&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_35">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>297</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QLabel {
+background-color: rgb(255, 255, 255);
+border: 4px solid rgb(85, 255, 255);
+color: rgb(247, 89, 113);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Oreo&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_36">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>273</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QLabel {
+background-color: rgb(255, 255, 255);
+border: 4px solid rgb(85, 255, 255);
+color: rgb(247, 89, 113);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Amendoin&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_38">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>216</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QLabel {
+background-color: rgb(255, 255, 255);
+border: 4px solid rgb(85, 255, 255);
+color: rgb(247, 89, 113);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Doce de Leite&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

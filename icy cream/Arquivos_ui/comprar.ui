@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 8pt &quot;Open Sans&quot;;</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>391</width>
+      <height>580</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>391</width>
+      <height>580</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>391</width>
+      <height>580</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>35</width>
+      <height>580</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>0</y>
+      <width>35</width>
+      <height>580</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>0</y>
+      <width>35</width>
+      <height>580</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>35</width>
+      <height>580</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>35</width>
+      <height>580</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>0</y>
+      <width>35</width>
+      <height>580</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>35</width>
+      <height>580</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>-5</x>
+      <y>0</y>
+      <width>401</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>fundo1.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>151</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(126, 66, 54);
+border-radius: 15px;
+}
+
+QPushButton:hover {
+	background-color: rgb(150, 71, 56);
+}
+QPushButton:pressed {
+	background-color: rgb(100, 66, 49);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>milk shake.png</normaloff>milk shake.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>140</width>
+      <height>140</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>500</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(247, 89, 113);
+font: 8pt &quot;Bukhari Script&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;Qual será o seu pedido?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>231</x>
+      <y>20</y>
+      <width>151</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(126, 66, 54);
+border-radius: 15px;
+}
+
+QPushButton:hover {
+	background-color: rgb(150, 71, 56);
+}
+QPushButton:pressed {
+	background-color: rgb(100, 66, 49);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Sorvete.png</normaloff>Sorvete.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>140</width>
+      <height>140</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>231</x>
+      <y>180</y>
+      <width>151</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(126, 66, 54);
+border-radius: 15px;
+}
+
+QPushButton:hover {
+	background-color: rgb(150, 71, 56);
+}
+QPushButton:pressed {
+	background-color: rgb(100, 66, 49);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>pngfind.com-aai-png-3728113 (2).png</normaloff>pngfind.com-aai-png-3728113 (2).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>140</width>
+      <height>140</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>151</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(126, 66, 54);
+border-radius: 15px;
+}
+
+QPushButton:hover {
+	background-color: rgb(150, 71, 56);
+}
+QPushButton:pressed {
+	background-color: rgb(100, 66, 49);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>sandae.png</normaloff>sandae.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>140</width>
+      <height>140</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
